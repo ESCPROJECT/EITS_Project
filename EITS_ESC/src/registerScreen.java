@@ -5,9 +5,12 @@
  */
 
 /*
+- Authors Block -
 Project Purpose: To create a C.R.U.D program for EITS
 Individual Purpose: To create a register account screen so the client can create an account and log in with it on the login screen.
 Authors: Tahlia Bennett (8100548118), NAME (ADD YOUR STUDENT ID HERE)
+
+- End Authors Block - 
  */
 public class registerScreen extends javax.swing.JFrame {
 
@@ -18,6 +21,13 @@ public class registerScreen extends javax.swing.JFrame {
         initComponents();
     }
 
+    
+    // Description Start - Name
+    /* example code
+    // Description End
+    
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -76,7 +86,7 @@ public class registerScreen extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(107, 107, 107)
                         .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(106, Short.MAX_VALUE))
+                .addContainerGap(107, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
