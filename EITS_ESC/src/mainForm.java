@@ -7,7 +7,7 @@
 /*
 - Authors Block -
 Project Purpose: To create a C.R.U.D program for EITS
-Individual Purpose: To create a register account screen so the client can create an account and log in with it on the login screen.
+Individual Purpose: 
 Authors: Tahlia Bennett (8100548118), NAME (ADD YOUR STUDENT ID HERE)
 
 - End Authors Block - 

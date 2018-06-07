@@ -5,9 +5,12 @@
  */
 
 /*
+- Authors Block -
 Project Purpose: To create a C.R.U.D program for EITS
-Individual Purpose: To create a login screen to get access to the program
+Individual Purpose: 
 Authors: Tahlia Bennett (8100548118), NAME (ADD YOUR STUDENT ID HERE)
+
+- End Authors Block - 
  */
 public class loginScreen extends javax.swing.JFrame {
 
