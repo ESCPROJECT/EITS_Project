@@ -3,8 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/8100548118/Documents/NetBeansProjects/EITS_ESC/src/registerScreen.java</file>
             <file>file:/C:/Users/8100548118/Documents/NetBeansProjects/EITS_ESC/src/loginScreen.java</file>
+=======
+            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/registerScreen.java</file>
+            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/loginScreen.java</file>
+            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/mainForm.java</file>
+            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/mainScreen.java</file>
+>>>>>>> d1b984d1e2379230fb857d8b87e85de0ffc5dfe5
         </group>
     </open-files>
 </project-private>
