@@ -33,6 +33,7 @@ public class QuestionnaireForm extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        GoBackToCustomerPScreenButton = new javax.swing.JButton();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
         SaveQuestionnaireMenuButton = new javax.swing.JMenuItem();
@@ -83,6 +84,8 @@ public class QuestionnaireForm extends javax.swing.JFrame {
 
         jLabel1.setText("Questionnaire");
 
+        GoBackToCustomerPScreenButton.setText("Go Back <");
+
         jMenu3.setText("File");
 
         SaveQuestionnaireMenuButton.setText("Save");
@@ -110,6 +113,10 @@ public class QuestionnaireForm extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(236, 236, 236)
+                .addComponent(GoBackToCustomerPScreenButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -118,7 +125,9 @@ public class QuestionnaireForm extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel1)
-                .addContainerGap(299, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 265, Short.MAX_VALUE)
+                .addComponent(GoBackToCustomerPScreenButton)
+                .addContainerGap())
         );
 
         pack();
@@ -161,6 +170,7 @@ public class QuestionnaireForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem ExitMenuFileButton;
+    private javax.swing.JButton GoBackToCustomerPScreenButton;
     private javax.swing.JMenuItem SaveQuestionnaireMenuButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel8;
