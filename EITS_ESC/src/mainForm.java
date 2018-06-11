@@ -1,6 +1,16 @@
-/**
- *
- * @author 8100548118
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*
+- Authors Block -
+Project Purpose: To create a C.R.U.D program for EITS
+Individual Purpose: To create a register account screen so the client can create an account and log in with it on the login screen.
+Authors: Tahlia Bennett (8100548118), NAME (ADD YOUR STUDENT ID HERE)
+
+- End Authors Block - 
  */
 public class mainForm extends javax.swing.JFrame {
 
