@@ -1,13 +1,13 @@
+
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+- Authors Block -
+Project Purpose: To create a C.R.U.D program for EITS
+Individual Purpose: 
+Authors: Tahlia Bennett, Christian Couper
+
+- End Authors Block - 
  */
 
-/**
- *
- * @author 6105411017
- */
 public class CustomerProfileScreen extends javax.swing.JFrame {
 
     /**
