@@ -9,9 +9,9 @@
             <Property name="text" type="java.lang.String" value="File"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="UpdateDetailsMenuButton">
+            <MenuItem class="javax.swing.JMenuItem" name="SaveMenuButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Update Details"/>
+                <Property name="text" type="java.lang.String" value="Save"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="ExitMenuFileButton">
