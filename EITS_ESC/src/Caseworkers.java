@@ -9,7 +9,7 @@
  * @author 6105411017
  */
 public class Caseworkers {
-    private String id_caseworkers;
+    private int id_caseworkers;
     private String firstname;
     private String lastname;
     private String caseworkerPassword;
@@ -18,14 +18,14 @@ public class Caseworkers {
     /**
      * @return the id_caseworkers
      */
-    public String getId_caseworkers() {
+    public int getId_caseworkers() {
         return id_caseworkers;
     }
 
     /**
      * @param id_caseworkers the id_caseworkers to set
      */
-    public void setId_caseworkers(String id_caseworkers) {
+    public void setId_caseworkers(int id_caseworkers) {
         this.id_caseworkers = id_caseworkers;
     }
 
