@@ -4,10 +4,15 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author 6105411017
+/*
+- Authors Block -
+Project Purpose: To create a C.R.U.D program for EITS
+Individual Purpose: 
+Authors: Tahlia Bennett (8100548118), NAME (ADD YOUR STUDENT ID HERE)
+
+- End Authors Block - 
  */
+
 public class QuestionnaireForm extends javax.swing.JFrame {
 
     /**
