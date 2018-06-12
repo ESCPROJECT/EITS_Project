@@ -35,18 +35,16 @@ public class administratorScreen extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
+        exitButton = new javax.swing.JButton();
+        caseWorkerButton = new javax.swing.JButton();
+        recordButton = new javax.swing.JButton();
+        clientButton = new javax.swing.JButton();
+        addResetClientButton = new javax.swing.JButton();
+        detailsClientButton = new javax.swing.JButton();
+        workerUpdateButton = new javax.swing.JButton();
+        changeWorkerButton = new javax.swing.JButton();
+        clientRecordButton = new javax.swing.JButton();
+        workerRecordButton = new javax.swing.JButton();
 
         jButton3.setText("Exit");
 
@@ -85,35 +83,35 @@ public class administratorScreen extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jButton4.setText("Exit");
+        exitButton.setText("Exit");
 
-        jButton1.setText("Case-Workers");
+        caseWorkerButton.setText("Case-Workers");
 
-        jButton2.setText("Records");
+        recordButton.setText("Records");
 
-        jButton5.setText("Clients");
+        clientButton.setText("Clients");
 
-        jButton6.setText("Add / reset");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        addResetClientButton.setText("Add / reset");
+        addResetClientButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                addResetClientButtonActionPerformed(evt);
             }
         });
 
-        jButton7.setText("Client details");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        detailsClientButton.setText("Client details");
+        detailsClientButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                detailsClientButtonActionPerformed(evt);
             }
         });
 
-        jButton8.setText("Update Workers");
+        workerUpdateButton.setText("Update Workers");
 
-        jButton9.setText("Add / Remove Worker");
+        changeWorkerButton.setText("Add / Remove Worker");
 
-        jButton10.setText("Client records");
+        clientRecordButton.setText("Client records");
 
-        jButton11.setText("Worker records");
+        workerRecordButton.setText("Worker records");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -128,26 +126,22 @@ public class administratorScreen extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton7)
-                            .addComponent(jButton6)
-                            .addComponent(jButton5))
-                        .addGap(33, 33, 33)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(detailsClientButton)
+                            .addComponent(addResetClientButton)
+                            .addComponent(clientButton))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addComponent(jButton8)
-                            .addComponent(jButton9))
+                            .addComponent(caseWorkerButton)
+                            .addComponent(workerUpdateButton)
+                            .addComponent(changeWorkerButton))
                         .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton10)
-                            .addComponent(jButton11))
+                            .addComponent(recordButton)
+                            .addComponent(clientRecordButton)
+                            .addComponent(workerRecordButton))
                         .addGap(60, 60, 60))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton4)
+                        .addComponent(exitButton)
                         .addGap(260, 260, 260))))
         );
         layout.setVerticalGroup(
@@ -157,40 +151,34 @@ public class administratorScreen extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(80, 80, 80)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton5)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(clientButton)
+                    .addComponent(caseWorkerButton)
+                    .addComponent(recordButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton10)
-                    .addComponent(jButton8)
-                    .addComponent(jButton6))
+                    .addComponent(clientRecordButton)
+                    .addComponent(workerUpdateButton)
+                    .addComponent(addResetClientButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton7)
-                    .addComponent(jButton9)
-                    .addComponent(jButton11))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton4)
+                    .addComponent(detailsClientButton)
+                    .addComponent(changeWorkerButton)
+                    .addComponent(workerRecordButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
+                .addComponent(exitButton)
                 .addGap(49, 49, 49))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(218, 218, 218)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel1))
-                .addGap(231, 231, 231))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void addResetClientButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addResetClientButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_addResetClientButtonActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void detailsClientButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detailsClientButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_detailsClientButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -228,21 +216,19 @@ public class administratorScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton addResetClientButton;
+    private javax.swing.JButton caseWorkerButton;
+    private javax.swing.JButton changeWorkerButton;
+    private javax.swing.JButton clientButton;
+    private javax.swing.JButton clientRecordButton;
+    private javax.swing.JButton detailsClientButton;
+    private javax.swing.JButton exitButton;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton recordButton;
+    private javax.swing.JButton workerRecordButton;
+    private javax.swing.JButton workerUpdateButton;
     // End of variables declaration//GEN-END:variables
 }
