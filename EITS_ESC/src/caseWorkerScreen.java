@@ -40,7 +40,7 @@ public class caseWorkerScreen extends javax.swing.JFrame {
 
         jButton4.setText("Exit");
 
-        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel2.setBackground(new java.awt.Color(171, 233, 209));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
