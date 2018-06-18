@@ -68,7 +68,6 @@ public class registerScreen extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         ButtonRegister = new javax.swing.JButton();
         ButtonCancel = new javax.swing.JButton();
-        ButtonExit = new javax.swing.JButton();
         TextFieldFname = new javax.swing.JTextField();
         TextFieldLname = new javax.swing.JTextField();
         TextFieldAge = new javax.swing.JTextField();
@@ -138,8 +137,6 @@ public class registerScreen extends javax.swing.JFrame {
 
         ButtonCancel.setText("Cancel");
 
-        ButtonExit.setText("Exit");
-
         TextFieldFname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldFnameActionPerformed(evt);
@@ -185,10 +182,6 @@ public class registerScreen extends javax.swing.JFrame {
                                 .addComponent(ButtonCancel)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(248, 248, 248)
-                .addComponent(ButtonExit)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
@@ -225,9 +218,7 @@ public class registerScreen extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ButtonRegister)
                     .addComponent(ButtonCancel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addComponent(ButtonExit)
-                .addGap(24, 24, 24))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
 
         pack();
@@ -289,7 +280,6 @@ public class registerScreen extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonCancel;
-    private javax.swing.JButton ButtonExit;
     private javax.swing.JButton ButtonRegister;
     private javax.swing.JTextField TextFieldAge;
     private javax.swing.JTextField TextFieldEmail;

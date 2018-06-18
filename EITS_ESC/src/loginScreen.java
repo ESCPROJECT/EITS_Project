@@ -13,7 +13,7 @@ Authors: Tahlia Bennett (8100548118), NAME (ADD YOUR STUDENT ID HERE)
 - End Authors Block - 
  */
 public class loginScreen extends javax.swing.JFrame {
-
+    Customer aCustomer;
     /**
      * Creates new form loginScreen
      */
@@ -185,8 +185,20 @@ public class loginScreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        setUpCustomer();
+        demo myDemoForm = new demo(aCustomer);
+        myDemoForm.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    public void setUpCustomer() {
+        // TODO add your handling code here:
+        // Demo
+        aCustomer = new Customer();
+        aCustomer.setMyFname("Tahlia");
+        aCustomer.setMyLname("Bennett");
+        
+        // End of Demo
+    }
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
