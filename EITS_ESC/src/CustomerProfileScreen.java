@@ -29,11 +29,6 @@ public class CustomerProfileScreen extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        FileButtonCustomer = new javax.swing.JMenu();
-        SaveMenuButton = new javax.swing.JMenuItem();
-        ExitMenuFileButton = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -71,21 +66,6 @@ public class CustomerProfileScreen extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        FileButtonCustomer.setText("File");
-
-        SaveMenuButton.setText("Save");
-        FileButtonCustomer.add(SaveMenuButton);
-
-        ExitMenuFileButton.setText("Exit E.I.T.S");
-        FileButtonCustomer.add(ExitMenuFileButton);
-
-        jMenuBar1.add(FileButtonCustomer);
-
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
-
-        setJMenuBar(jMenuBar1);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -100,7 +80,7 @@ public class CustomerProfileScreen extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(324, Short.MAX_VALUE))
+                .addContainerGap(345, Short.MAX_VALUE))
         );
 
         pack();
@@ -142,13 +122,8 @@ public class CustomerProfileScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem ExitMenuFileButton;
-    private javax.swing.JMenu FileButtonCustomer;
-    private javax.swing.JMenuItem SaveMenuButton;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
