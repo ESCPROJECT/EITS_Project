@@ -4,6 +4,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -38,7 +39,7 @@ public class DB_model {
     public static Admin getAdmin(String userName, String mypassword){
         getConnection();
         Statement st;
-        ResultSet rs;
+        ResultSet rs = null;
         
         ArrayList <Admin> userList;
         String query = "SELECT * FROM `admin` WHERE Uname = '" + userName + 
@@ -48,8 +49,11 @@ public class DB_model {
            st = conn.createStatement();
            rs = st.executeQuery("SELECT * FROM `admin` WHERE Uname = 'adminusername' AND password = 'password' ");
            Admin user;
+        rs.beforeFirst();
+        JOptionPane.showMessageDialog( null, rs.next(), "Query Results", JOptionPane.INFORMATION_MESSAGE );
         // add user objects to the ArrayList
         while(rs.next()) {
+        JOptionPane.showMessageDialog( null, "No rows found.", "Query Results", JOptionPane.INFORMATION_MESSAGE );
         user = new Admin(rs.getInt("admin_id"),rs.getString("fname"), rs.getString("lname"),rs.getString("password"),rs.getString("Uname"));
         return user;
          
@@ -76,7 +80,7 @@ public class DB_model {
            Customer user;
         // add user objects to the ArrayList
         while(rs.next()) {
-        user = new Customer(rs.getInt("age"),rs.getString("fname"), rs.getString("lname"),rs.getString("password"),rs.getString("Uname"));
+        user = new Customer(rs.getInt("age"),rs.getString("fname"), rs.getString("lname"),rs.getString("password"),rs.getString("Uname"),rs.getString("type"));
         return user;
          
         } // end of while loop 

@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -184,19 +187,31 @@ public class loginScreen extends javax.swing.JFrame {
     private void BntLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BntLoginActionPerformed
         // TODO add your handling code here:
         Customer mycustomer;
-        Admin myadmin = DB_model.getAdmin(this.txtUsername.getText(),this.txtPassword.getText());
-        if (myadmin == null){
-         mycustomer = DB_model.getCustomers(this.txtUsername.getText(),this.txtPassword.getText());
+        String mytype;
+        try{
+        mycustomer = DB_model.getCustomers(this.txtUsername.getText(),this.txtPassword.getText());
             
-            
-   
-        if (mycustomer == null){
-        Caseworker mycustomer = DB_model.getCustomers(this.txtUsername.getText(),this.txtPassword.getText());
-        
-        }
+        if (mycustomer.getMytype().equalsIgnoreCase("ad")){
+        administratorScreen admin = new administratorScreen(mycustomer);
+        admin.setVisible(true);
+        //this.dispose();
         
     }//GEN-LAST:event_BntLoginActionPerformed
-
+        else if(mycustomer.getMytype().equalsIgnoreCase("cw")){
+        caseWorkerScreen admin = new caseWorkerScreen(mycustomer);
+        admin.setVisible(true);
+        //this.dispose();
+    }
+        else if(mycustomer.getMytype().equalsIgnoreCase("cu")){
+        CustomerProfileScreen admin = new CustomerProfileScreen(mycustomer);
+        admin.setVisible(true);
+        //this.dispose();
+        
+    }
+        }catch (Exception e){
+            JOptionPane.showMessageDialog( null, "No rows found.", "Query Results", JOptionPane.INFORMATION_MESSAGE );
+        }
+    }
     private void txtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsernameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUsernameActionPerformed

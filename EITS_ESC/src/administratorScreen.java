@@ -15,11 +15,21 @@ Authors: Tahlia Bennett, NAME
 
 public class administratorScreen extends javax.swing.JFrame {
 
+    Customer myadmin;
+        
+    
     /**
      * Creates new form administratorScreen
      */
     public administratorScreen() {
         initComponents();
+    }
+    public administratorScreen(Customer myAdmin) {
+        initComponents();
+        myadmin = myAdmin;
+        this.setTitle("welcome "+ myadmin.getMyFname()+ " "+ myadmin.getMyLname());
+        
+        
     }
 
     /**
