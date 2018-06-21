@@ -17,6 +17,28 @@ public class registerScreen extends javax.swing.JFrame {
    
     // Creates new form registerScreen
     
+    private String myAge;
+    private String myUname;
+    private String myFname;
+    private String myLname;
+    private String myPassword;
+    
+    
+    
+     public registerScreen(Customer mycustomer) {
+        initComponents();
+        textAge.setText(Integer.toString(mycustomer.getMyAge())); 
+        //textEmail.setText(mycustomer.)
+        textFname.setText(mycustomer.getMyFname());
+        textLname.setText(mycustomer.getMyLname());
+        textPassword.setText(mycustomer.getMyPassword());
+    }
+
+    
+    /* 
+    Alexis Lin
+    */
+    
     public registerScreen() {
         initComponents();
     }
@@ -69,11 +91,11 @@ public class registerScreen extends javax.swing.JFrame {
         ButtonRegister = new javax.swing.JButton();
         ButtonCancel = new javax.swing.JButton();
         ButtonExit = new javax.swing.JButton();
-        TextFieldFname = new javax.swing.JTextField();
-        TextFieldLname = new javax.swing.JTextField();
-        TextFieldAge = new javax.swing.JTextField();
-        TextFieldEmail = new javax.swing.JTextField();
-        TextFieldPassword = new javax.swing.JTextField();
+        textFname = new javax.swing.JTextField();
+        textLname = new javax.swing.JTextField();
+        textAge = new javax.swing.JTextField();
+        textEmail = new javax.swing.JTextField();
+        textPassword = new javax.swing.JTextField();
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel7.setText("E.I.T.S");
@@ -140,15 +162,21 @@ public class registerScreen extends javax.swing.JFrame {
 
         ButtonExit.setText("Exit");
 
-        TextFieldFname.addActionListener(new java.awt.event.ActionListener() {
+        textFname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TextFieldFnameActionPerformed(evt);
+                textFnameActionPerformed(evt);
             }
         });
 
-        TextFieldLname.addActionListener(new java.awt.event.ActionListener() {
+        textLname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TextFieldLnameActionPerformed(evt);
+                textLnameActionPerformed(evt);
+            }
+        });
+
+        textAge.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textAgeActionPerformed(evt);
             }
         });
 
@@ -173,11 +201,11 @@ public class registerScreen extends javax.swing.JFrame {
                                     .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(TextFieldAge)
-                                    .addComponent(TextFieldEmail)
-                                    .addComponent(TextFieldPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
-                                    .addComponent(TextFieldFname)
-                                    .addComponent(TextFieldLname)))
+                                    .addComponent(textAge)
+                                    .addComponent(textEmail)
+                                    .addComponent(textPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
+                                    .addComponent(textFname)
+                                    .addComponent(textLname)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(40, 40, 40)
                                 .addComponent(ButtonRegister)
@@ -204,23 +232,23 @@ public class registerScreen extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(TextFieldFname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textFname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(TextFieldLname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textLname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(TextFieldAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(TextFieldEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(TextFieldPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ButtonRegister)
@@ -233,23 +261,27 @@ public class registerScreen extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void TextFieldFnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextFieldFnameActionPerformed
+    private void textFnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFnameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextFieldFnameActionPerformed
+    }//GEN-LAST:event_textFnameActionPerformed
 
-    private void TextFieldLnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextFieldLnameActionPerformed
+    private void textLnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textLnameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextFieldLnameActionPerformed
+    }//GEN-LAST:event_textLnameActionPerformed
 
     private void ButtonRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonRegisterActionPerformed
         // TODO add your handling code here:
-        String query = "INSERT INTO `customers` (`fname`, `lname`, `age`, `email`, `password`) VALUES ('"+TextFieldFname.getText() +
-                       "', '" +TextFieldLname.getText() + "', '" +TextFieldAge.getName() + "', '" +TextFieldEmail.getText() +
-                       "', '" +TextFieldPassword.getText();
+        String query = "INSERT INTO `customers` (`fname`, `lname`, `age`, `email`, `password`) VALUES ('"+textFname.getText() +
+                       "', '" +textLname.getText() + "', '" +textAge.getName() + "', '" +textEmail.getText() +
+                       "', '" +textPassword.getText();
                        
             //executeSQLQuery(query, "Inserted")
             // Will work once connection method has been written
     }//GEN-LAST:event_ButtonRegisterActionPerformed
+
+    private void textAgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textAgeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textAgeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -291,11 +323,6 @@ public class registerScreen extends javax.swing.JFrame {
     private javax.swing.JButton ButtonCancel;
     private javax.swing.JButton ButtonExit;
     private javax.swing.JButton ButtonRegister;
-    private javax.swing.JTextField TextFieldAge;
-    private javax.swing.JTextField TextFieldEmail;
-    private javax.swing.JTextField TextFieldFname;
-    private javax.swing.JTextField TextFieldLname;
-    private javax.swing.JTextField TextFieldPassword;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -307,6 +334,11 @@ public class registerScreen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField textAge;
+    private javax.swing.JTextField textEmail;
+    private javax.swing.JTextField textFname;
+    private javax.swing.JTextField textLname;
+    private javax.swing.JTextField textPassword;
     // End of variables declaration//GEN-END:variables
 
    // private void initComponents() {
