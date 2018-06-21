@@ -10,10 +10,25 @@
  */
 public class Customer {
     private int myAge;
-    private String myEmail;
+    private String myUname;
     private String myFname;
     private String myLname;
     private String myPassword;
+    
+public Customer(){
+    
+    
+}
+
+public Customer(int age, String Uname, String Fname, String Lname, String Password){
+    myAge = age;
+    myUname = Uname;    
+    myFname = Fname;
+    myLname = Lname;
+    myPassword = Password;
+    
+}
+
 
     /**
      * @return the myAge
@@ -32,15 +47,15 @@ public class Customer {
     /**
      * @return the myEmail
      */
-    public String getMyEmail() {
-        return myEmail;
+    public String getMyUname() {
+        return myUname;
     }
 
     /**
-     * @param myEmail the myEmail to set
+     * @param myUname the myEmail to set
      */
-    public void setMyEmail(String myEmail) {
-        this.myEmail = myEmail;
+    public void setMyUname(String myUname) {
+        this.myUname = myUname;
     }
 
     /**
