@@ -14,18 +14,20 @@ public class Customer {
     private String myFname;
     private String myLname;
     private String myPassword;
+    private String mytype;
     
 public Customer(){
     
     
 }
 
-public Customer(int age, String Uname, String Fname, String Lname, String Password){
+public Customer(int age, String Uname, String Fname, String Lname, String Password,String type){
     myAge = age;
     myUname = Uname;    
     myFname = Fname;
     myLname = Lname;
     myPassword = Password;
+    mytype = type;
     
 }
 
@@ -98,5 +100,19 @@ public Customer(int age, String Uname, String Fname, String Lname, String Passwo
      */
     public void setMyPassword(String myPassword) {
         this.myPassword = myPassword;
+    }
+
+    /**
+     * @return the mytype
+     */
+    public String getMytype() {
+        return mytype;
+    }
+
+    /**
+     * @param mytype the mytype to set
+     */
+    public void setMytype(String mytype) {
+        this.mytype = mytype;
     }
 }

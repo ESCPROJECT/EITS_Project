@@ -9,13 +9,22 @@ Authors: Tahlia Bennett, Christian Couper
  */
 
 public class CustomerProfileScreen extends javax.swing.JFrame {
-
+    Customer mycustomer;
+    
     /**
      * Creates new form CustomerProfileScreen
      */
     public CustomerProfileScreen() {
         initComponents();
+        
     }
+    public CustomerProfileScreen(Customer cust) {
+        initComponents();
+        mycustomer = cust;
+        this.setTitle("welcome Pig " + mycustomer.getMyFname()+" "+ mycustomer.getMyLname());
+        
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.

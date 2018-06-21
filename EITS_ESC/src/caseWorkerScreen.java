@@ -15,11 +15,22 @@ Authors: Tahlia Bennett, NAME
 
 public class caseWorkerScreen extends javax.swing.JFrame {
 
+    Customer mycworker;
+    
     /**
      * Creates new form caseWorkerScreen
      */
     public caseWorkerScreen() {
         initComponents();
+    }
+    
+    public caseWorkerScreen(Customer mycaseworker) {
+        initComponents();
+        mycworker = mycaseworker;
+        this.setTitle("welcome caseworker " + mycworker.getMyFname()+ " " + mycworker.getMyLname());
+        
+        
+        
     }
 
     /**
