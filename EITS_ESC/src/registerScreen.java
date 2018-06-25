@@ -27,6 +27,12 @@ public class registerScreen extends javax.swing.JFrame {
     /* 
     Alexis Lin
     */
+
+    /**
+     *
+     * @param mycustomer
+     */
+
     
     
         public registerScreen() {
