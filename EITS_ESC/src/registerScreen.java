@@ -41,6 +41,11 @@ public class registerScreen extends javax.swing.JFrame {
     
     public registerScreen() {
         initComponents();
+        textAge.getText(Integer.toString(mycustomer.setMyAge()));
+        textFname.getText(mycustomer.setMyFname());
+        textLname.getText(mycustomer.setMyLname());
+        textPassword.getText(mycustomer.setMyPassword());
+        //Alexis Lin
     }
 
     // Connection to Database
@@ -55,6 +60,7 @@ public class registerScreen extends javax.swing.JFrame {
         } // End of Catch
     } // End of getConnection
     
+    
     // Get Customer list from MySQL Database
     // Set up the query
     // Execute the query
@@ -65,6 +71,7 @@ public class registerScreen extends javax.swing.JFrame {
     public void executeSQLQuery (String query, String message){
         Connection con = getConnection();
         // Connecton Code
+        // Should be in thhe DB_model
     }
     
     
