@@ -65,7 +65,12 @@ public class DB_model {
        }// end of try catch block
       return null;
          
-    }//end of admin method
+    }//end of admin method:christian
+    
+    
+    
+    
+    
     public static Customer getCustomers(String userName, String mypassword){
         getConnection();
         Statement st;
@@ -80,7 +85,7 @@ public class DB_model {
            Customer user;
         // add user objects to the ArrayList
         while(rs.next()) {
-        user = new Customer(rs.getInt("age"),rs.getString("fname"), rs.getString("lname"),rs.getString("password"),rs.getString("Uname"),rs.getString("type"));
+        user = new Customer(rs.getInt("age"),rs.getString("fname"), rs.getString("lname"),rs.getString("password"),rs.getString("Uname"),rs.getString("type"),rs.getInt("id"));
         return user;
          
         } // end of while loop 
@@ -91,7 +96,12 @@ public class DB_model {
        }// end of try catch block
       return null;
          
-    }//end of Customer method
+    }//end of Customer method:christian
+    
+    
+    
+    
+    
         public static Caseworkers getCaseworker(String userName, String mypassword){
         getConnection();
         Statement st;
@@ -117,7 +127,11 @@ public class DB_model {
        }// end of try catch block
       return null;
          
-    }//end of Caseworker method
+    }//end of Caseworker method:christian
+        
+        
+        
+        
         
     /*    
     public ArrayList<Caseworkers> getCaseworkersList(){

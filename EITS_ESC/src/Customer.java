@@ -15,19 +15,21 @@ public class Customer {
     private String myLname;
     private String myPassword;
     private String mytype;
+    private int myid;
 
 public Customer(){
     
     
 }
 
-public Customer(int age, String Uname, String Fname, String Lname, String Password,String type){
+public Customer(int age, String Uname, String Fname, String Lname, String Password,String type,int my_id){
     myAge = age;
     myUname = Uname;    
     myFname = Fname;
     myLname = Lname;
     myPassword = Password;
     mytype = type;
+    myid = my_id;
     
 }
 
@@ -113,6 +115,20 @@ public Customer(int age, String Uname, String Fname, String Lname, String Passwo
      */
     public void setMytype(String mytype) {
         this.mytype = mytype;
+    }
+
+    /**
+     * @return the myid
+     */
+    public int getMyid() {
+        return myid;
+    }
+
+    /**
+     * @param myid the myid to set
+     */
+    public void setMyid(int myid) {
+        this.myid = myid;
     }
 
 }
