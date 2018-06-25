@@ -23,8 +23,21 @@ public class registerScreen extends javax.swing.JFrame {
     private String myLname;
     private String myPassword;
     
+        
+    /* 
+    Alexis Lin
+    */
     
     
+        public registerScreen() {
+        initComponents();
+        textAge.getText(Integer.toString(mycustomer.setMyAge()));
+        textFname.getText(mycustomer.setMyFname());
+        textLname.getText(mycustomer.setMyLname());
+        textPassword.getText(mycustomer.setMyPassword());
+        //Alexis Lin
+    }
+        
      public registerScreen(Customer mycustomer) {
         initComponents();
         textAge.setText(Integer.toString(mycustomer.getMyAge())); 
@@ -34,19 +47,8 @@ public class registerScreen extends javax.swing.JFrame {
         textPassword.setText(mycustomer.getMyPassword());
     }
 
-    
-    /* 
-    Alexis Lin
-    */
-    
-    public registerScreen() {
-        initComponents();
-        textAge.getText(Integer.toString(mycustomer.setMyAge()));
-        textFname.getText(mycustomer.setMyFname());
-        textLname.getText(mycustomer.setMyLname());
-        textPassword.getText(mycustomer.setMyPassword());
-        //Alexis Lin
-    }
+
+
 
     // Connection to Database
     public Connection getConnection(){

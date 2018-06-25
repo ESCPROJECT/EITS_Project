@@ -36,7 +36,7 @@ public class loginScreen extends javax.swing.JFrame {
     private void initComponents() {
 
         BntLogin = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        BntRegister = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -57,10 +57,10 @@ public class loginScreen extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("Register");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BntRegister.setText("Register");
+        BntRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BntRegisterActionPerformed(evt);
             }
         });
 
@@ -143,7 +143,7 @@ public class loginScreen extends javax.swing.JFrame {
                                 .addComponent(jLabel5))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(225, 225, 225)
-                                .addComponent(jButton2))
+                                .addComponent(BntRegister))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(234, 234, 234)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -177,7 +177,7 @@ public class loginScreen extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
+                .addComponent(BntRegister)
                 .addContainerGap(93, Short.MAX_VALUE))
         );
 
@@ -216,7 +216,7 @@ public class loginScreen extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUsernameActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BntRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BntRegisterActionPerformed
         // TODO add your handling code here:
         // questionnaire -- new registerScreen().setVisible(true);
         setVisible(false);
@@ -224,7 +224,7 @@ public class loginScreen extends javax.swing.JFrame {
         form.setVisible(true);
         
         
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_BntRegisterActionPerformed
 
     /**
      * @param args the command line arguments
@@ -263,7 +263,7 @@ public class loginScreen extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BntLogin;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton BntRegister;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
