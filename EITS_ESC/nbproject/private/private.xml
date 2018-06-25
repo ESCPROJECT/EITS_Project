@@ -3,16 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/registerScreen.java</file>
-            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/CustomerProfileScreen.java</file>
-            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/administratorScreen.java</file>
-            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/caseWorkerScreen.java</file>
-            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/loginScreen.java</file>
-            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/User.java</file>
-            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/Admin.java</file>
-            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/Customer.java</file>
-            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/DB_model.java</file>
-            <file>file:/C:/Users/6105411017/Documents/EITS_Project/EITS_ESC/src/Caseworkers.java</file>
+            <file>file:/E:/SoftWareDevelopment_Sem1_term2/Group_Projects/180618Clone/EITS_ESC/src/administratorScreen.java</file>
+            <file>file:/E:/SoftWareDevelopment_Sem1_term2/Group_Projects/180618Clone/EITS_ESC/src/registerScreen.java</file>
+            <file>file:/E:/SoftWareDevelopment_Sem1_term2/Group_Projects/180618Clone/EITS_ESC/src/caseWorkerScreen.java</file>
+            <file>file:/E:/SoftWareDevelopment_Sem1_term2/Group_Projects/180618Clone/EITS_ESC/src/Customer.java</file>
+            <file>file:/E:/SoftWareDevelopment_Sem1_term2/Group_Projects/180618Clone/EITS_ESC/src/adminWorkerEdit.java</file>
+            <file>file:/E:/SoftWareDevelopment_Sem1_term2/Group_Projects/180618Clone/EITS_ESC/src/loginScreen.java</file>
+            <file>file:/E:/SoftWareDevelopment_Sem1_term2/Group_Projects/180618Clone/EITS_ESC/src/clientScreen.java</file>
+            <file>file:/E:/SoftWareDevelopment_Sem1_term2/Group_Projects/180618Clone/EITS_ESC/src/adminCustomerEdit.java</file>
         </group>
     </open-files>
 </project-private>
