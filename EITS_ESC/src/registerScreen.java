@@ -41,6 +41,11 @@ public class registerScreen extends javax.swing.JFrame {
     
     public registerScreen() {
         initComponents();
+        textAge.getText(Integer.toString(mycustomer.setMyAge()));
+        textFname.getText(mycustomer.setMyFname());
+        textLname.getText(mycustomer.setMyLname());
+        textPassword.getText(mycustomer.setMyPassword());
+        //Alexis Lin
     }
 
     // Connection to Database
