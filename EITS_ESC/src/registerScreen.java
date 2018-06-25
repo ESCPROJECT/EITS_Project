@@ -28,7 +28,7 @@ public class registerScreen extends javax.swing.JFrame {
      public registerScreen(Customer mycustomer) {
         initComponents();
         textAge.setText(Integer.toString(mycustomer.getMyAge())); 
-        //textEmail.setText(mycustomer.)
+        textUserName.setText(mycustomer.getMyUname());
         textFname.setText(mycustomer.getMyFname());
         textLname.setText(mycustomer.getMyLname());
         textPassword.setText(mycustomer.getMyPassword());
@@ -94,7 +94,7 @@ public class registerScreen extends javax.swing.JFrame {
         textFname = new javax.swing.JTextField();
         textLname = new javax.swing.JTextField();
         textAge = new javax.swing.JTextField();
-        textEmail = new javax.swing.JTextField();
+        textUserName = new javax.swing.JTextField();
         textPassword = new javax.swing.JTextField();
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
@@ -147,7 +147,7 @@ public class registerScreen extends javax.swing.JFrame {
 
         jLabel4.setText("Age :");
 
-        jLabel5.setText("Email Address :");
+        jLabel5.setText("User Name:");
 
         jLabel10.setText("Password :");
 
@@ -161,6 +161,11 @@ public class registerScreen extends javax.swing.JFrame {
         ButtonCancel.setText("Cancel");
 
         ButtonExit.setText("Exit");
+        ButtonExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonExitActionPerformed(evt);
+            }
+        });
 
         textFname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,7 +207,7 @@ public class registerScreen extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(textAge)
-                                    .addComponent(textEmail)
+                                    .addComponent(textUserName)
                                     .addComponent(textPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
                                     .addComponent(textFname)
                                     .addComponent(textLname)))
@@ -244,7 +249,7 @@ public class registerScreen extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(textEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
@@ -271,17 +276,25 @@ public class registerScreen extends javax.swing.JFrame {
 
     private void ButtonRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonRegisterActionPerformed
         // TODO add your handling code here:
-        String query = "INSERT INTO `customers` (`fname`, `lname`, `age`, `email`, `password`) VALUES ('"+textFname.getText() +
-                       "', '" +textLname.getText() + "', '" +textAge.getName() + "', '" +textEmail.getText() +
+        String query = "INSERT INTO `customers` (`fname`, `lname`, `age`, `Uname`, `password`) VALUES ('"+textFname.getText() +
+                       "', '" +textLname.getText() + "', '" +textAge.getName() + "', '" +textUserName.getText() +
                        "', '" +textPassword.getText();
                        
-            //executeSQLQuery(query, "Inserted")
+            executeSQLQuery(query, "Inserted");
+            
+            JOptionPane.showMessageDialog( null, "Account creation successful", "Query Results", JOptionPane.INFORMATION_MESSAGE );//message prompt
             // Will work once connection method has been written
     }//GEN-LAST:event_ButtonRegisterActionPerformed
 
     private void textAgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textAgeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_textAgeActionPerformed
+
+    private void ButtonExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonExitActionPerformed
+        // TODO add your handling code here:
+        
+        this.dispose();
+    }//GEN-LAST:event_ButtonExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -335,10 +348,10 @@ public class registerScreen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField textAge;
-    private javax.swing.JTextField textEmail;
     private javax.swing.JTextField textFname;
     private javax.swing.JTextField textLname;
     private javax.swing.JTextField textPassword;
+    private javax.swing.JTextField textUserName;
     // End of variables declaration//GEN-END:variables
 
    // private void initComponents() {

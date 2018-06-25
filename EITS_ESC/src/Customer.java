@@ -15,7 +15,7 @@ public class Customer {
     private String myLname;
     private String myPassword;
     private String mytype;
-    
+
 public Customer(){
     
     
@@ -30,7 +30,6 @@ public Customer(int age, String Uname, String Fname, String Lname, String Passwo
     mytype = type;
     
 }
-
 
     /**
      * @return the myAge
@@ -47,14 +46,14 @@ public Customer(int age, String Uname, String Fname, String Lname, String Passwo
     }
 
     /**
-     * @return the myEmail
+     * @return the myUname
      */
     public String getMyUname() {
         return myUname;
     }
 
     /**
-     * @param myUname the myEmail to set
+     * @param myUname the myUname to set
      */
     public void setMyUname(String myUname) {
         this.myUname = myUname;
@@ -115,4 +114,5 @@ public Customer(int age, String Uname, String Fname, String Lname, String Passwo
     public void setMytype(String mytype) {
         this.mytype = mytype;
     }
+
 }

@@ -61,7 +61,7 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="textAge" max="32767" attributes="0"/>
-                                  <Component id="textEmail" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="textUserName" alignment="0" max="32767" attributes="0"/>
                                   <Component id="textPassword" alignment="0" pref="135" max="32767" attributes="0"/>
                                   <Component id="textFname" max="32767" attributes="0"/>
                                   <Component id="textLname" alignment="0" max="32767" attributes="0"/>
@@ -116,7 +116,7 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="textEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textUserName" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -222,7 +222,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Email Address :"/>
+        <Property name="text" type="java.lang.String" value="User Name:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel10">
@@ -247,6 +247,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Exit"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonExitActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="textFname">
       <Events>
@@ -263,7 +266,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textAgeActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="textEmail">
+    <Component class="javax.swing.JTextField" name="textUserName">
     </Component>
     <Component class="javax.swing.JTextField" name="textPassword">
     </Component>
