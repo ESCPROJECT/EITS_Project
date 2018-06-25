@@ -1,4 +1,11 @@
-
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 /*
 - Authors Block -
 Project Purpose: To create a C.R.U.D program for EITS
@@ -16,16 +23,21 @@ public class CustomerProfileScreen extends javax.swing.JFrame {
      */
     public CustomerProfileScreen() {
         initComponents();
-        
+
     }
+    
+    
     public CustomerProfileScreen(Customer cust) {
         initComponents();
         mycustomer = cust;
-        this.setTitle("welcome Pig " + mycustomer.getMyFname()+" "+ mycustomer.getMyLname());
+        this.setTitle("Welcome Customer " + mycustomer.getMyFname()+" "+ mycustomer.getMyLname());
         
     }
-
-
+    
+    
+    
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -126,6 +138,7 @@ public class CustomerProfileScreen extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new CustomerProfileScreen().setVisible(true);
+
             }
         });
     }
