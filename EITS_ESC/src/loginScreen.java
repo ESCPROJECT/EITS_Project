@@ -219,9 +219,9 @@ public class loginScreen extends javax.swing.JFrame {
     private void BntRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BntRegisterActionPerformed
         // TODO add your handling code here:
         // questionnaire -- new registerScreen().setVisible(true);
-        setVisible(false);
-        registerScreen form = new registerScreen();
-        form.setVisible(true);
+        registerScreen admin = new registerScreen();
+        admin.setVisible(true);
+        this.dispose();
         
         
     }//GEN-LAST:event_BntRegisterActionPerformed
