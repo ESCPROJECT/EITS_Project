@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 14, 2018 at 03:44 AM
+-- Generation Time: Jun 25, 2018 at 12:44 AM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.5.30
 
@@ -29,8 +29,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `admin` (
   `admin_id` int(11) NOT NULL,
   `fname` varchar(30) NOT NULL,
-  `lname` varchar(30) NOT NULL
+  `lname` varchar(30) NOT NULL,
+  `password` varchar(8) NOT NULL,
+  `Uname` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`admin_id`, `fname`, `lname`, `password`, `Uname`) VALUES
+(1, 'Bob', 'bobadmin', 'password', 'adminusername'),
+(2, 'John', 'Johnadmin', 'password', 'adminusername2');
 
 -- --------------------------------------------------------
 
@@ -42,9 +52,16 @@ CREATE TABLE `caseworkers` (
   `id` int(11) NOT NULL,
   `fname` varchar(30) NOT NULL,
   `lname` varchar(30) NOT NULL,
-  `age` int(11) NOT NULL,
+  `Uname` varchar(30) NOT NULL,
   `password` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Case-Worker Table for EITS';
+
+--
+-- Dumping data for table `caseworkers`
+--
+
+INSERT INTO `caseworkers` (`id`, `fname`, `lname`, `Uname`, `password`) VALUES
+(1, 'John', 'caseworker', '20', 'Password');
 
 -- --------------------------------------------------------
 
@@ -80,8 +97,24 @@ CREATE TABLE `customers` (
   `lname` varchar(30) NOT NULL,
   `age` int(11) NOT NULL,
   `password` varchar(10) NOT NULL,
-  `email` int(30) NOT NULL
+  `Uname` varchar(30) NOT NULL,
+  `type` varchar(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Customer Table For EITS';
+
+--
+-- Dumping data for table `customers`
+--
+
+INSERT INTO `customers` (`id`, `fname`, `lname`, `age`, `password`, `Uname`, `type`) VALUES
+(1, 'Bob', 'customer', 30, 'password', '0', ''),
+(2, 'fadmin', 'ladmin', 20, 'password', 'uadmin', 'ad'),
+(3, 'fadmin2', 'ladmin2', 22, 'password', 'uadmin2', 'ad'),
+(4, 'fadmin3', 'ladmin3', 23, 'password', 'uadmin3', 'ad'),
+(5, 'fadmin4', 'ladmin4', 24, 'password', 'uadmin4', 'ad'),
+(6, 'fcase', 'lcase', 25, 'password', 'ucase', 'cw'),
+(7, 'fcase2', 'lcase2', 26, 'password', 'ucase2', 'cw'),
+(8, 'fcus', 'lcus', 30, 'password', 'ucus', 'cu'),
+(9, 'fcus2', 'lcus2', 31, 'password', 'ucu2', 'cu');
 
 -- --------------------------------------------------------
 
@@ -178,12 +211,12 @@ ALTER TABLE `units`
 -- AUTO_INCREMENT for table `caseworkers`
 --
 ALTER TABLE `caseworkers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- Constraints for dumped tables
 --

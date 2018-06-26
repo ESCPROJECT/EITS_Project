@@ -13,7 +13,21 @@ public class Caseworkers {
     private String firstname;
     private String lastname;
     private String caseworkerPassword;
-    private int caseworkerAge;
+    private String username;
+    
+public Caseworkers() {
+    
+    
+}
+public Caseworkers(int id, String fname, String lname, String password, String Uname) {
+    id_caseworkers = id;
+    firstname = fname;
+    lastname = lname;
+    caseworkerPassword = password;
+    username = Uname;
+    
+}
+    
 
     /**
      * @return the id_caseworkers
@@ -74,14 +88,14 @@ public class Caseworkers {
     /**
      * @return the caseworkerAge
      */
-    public int getCaseworkerAge() {
-        return caseworkerAge;
+    public String getUsername() {
+        return username;
     }
 
     /**
-     * @param caseworkerAge the caseworkerAge to set
+     * @param username the caseworkerAge to set
      */
-    public void setCaseworkerAge(int caseworkerAge) {
-        this.caseworkerAge = caseworkerAge;
+    public void setUsername(String username) {
+        this.username = username;
     }
 }//end of Caseworkers sets and gets: Christian

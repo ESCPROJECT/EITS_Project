@@ -10,10 +10,28 @@
  */
 public class Customer {
     private int myAge;
-    private String myEmail;
+    private String myUname;
     private String myFname;
     private String myLname;
     private String myPassword;
+    private String mytype;
+    private int myid;
+
+public Customer(){
+    
+    
+}
+
+public Customer(int age, String Uname, String Fname, String Lname, String Password,String type,int my_id){
+    myAge = age;
+    myUname = Uname;    
+    myFname = Fname;
+    myLname = Lname;
+    myPassword = Password;
+    mytype = type;
+    myid = my_id;
+    
+}
 
     /**
      * @return the myAge
@@ -30,17 +48,17 @@ public class Customer {
     }
 
     /**
-     * @return the myEmail
+     * @return the myUname
      */
-    public String getMyEmail() {
-        return myEmail;
+    public String getMyUname() {
+        return myUname;
     }
 
     /**
-     * @param myEmail the myEmail to set
+     * @param myUname the myUname to set
      */
-    public void setMyEmail(String myEmail) {
-        this.myEmail = myEmail;
+    public void setMyUname(String myUname) {
+        this.myUname = myUname;
     }
 
     /**
@@ -84,4 +102,33 @@ public class Customer {
     public void setMyPassword(String myPassword) {
         this.myPassword = myPassword;
     }
+
+    /**
+     * @return the mytype
+     */
+    public String getMytype() {
+        return mytype;
+    }
+
+    /**
+     * @param mytype the mytype to set
+     */
+    public void setMytype(String mytype) {
+        this.mytype = mytype;
+    }
+
+    /**
+     * @return the myid
+     */
+    public int getMyid() {
+        return myid;
+    }
+
+    /**
+     * @param myid the myid to set
+     */
+    public void setMyid(int myid) {
+        this.myid = myid;
+    }
+
 }

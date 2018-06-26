@@ -12,7 +12,21 @@ public class Admin {
     private int id_admin;
     private String firstname;
     private String lastname;
-
+    private String username;
+    private String password;
+    
+    public Admin(){
+        
+        
+    }
+    public Admin(int id, String fname, String lname, String uname, String mypassword){
+    id_admin = id;
+    firstname = fname;
+    lastname = lname;
+    username = uname;
+    password = mypassword;
+        
+    }
     /**
      * @return the id_admin
      */
@@ -53,6 +67,34 @@ public class Admin {
      */
     public void setLastname(String lastname) {
         this.lastname = lastname;
+    }
+
+    /**
+     * @return the username
+     */
+    public String getUsername() {
+        return username;
+    }
+
+    /**
+     * @param username the username to set
+     */
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    /**
+     * @return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * @param password the password to set
+     */
+    public void setPassword(String password) {
+        this.password = password;
     }
             
 }//end of Admin Class sets and gets: Christian
