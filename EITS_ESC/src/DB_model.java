@@ -129,6 +129,28 @@ public class DB_model {
          
     }//end of Caseworker method:christian
         
+        public static void AddNewCustomer(Customer mycustomer){
+            Statement st;
+            
+            int myAge = mycustomer.getMyAge();
+            String myUname = mycustomer.getMyUname();
+            String myFname = mycustomer.getMyFname();
+            String myLname = mycustomer.getMyLname();
+            String myPassword = mycustomer.getMyPassword();
+            
+           String query = "INSERT INTO `customers`(`fname`, `lname`, `age`, `password`, `Uname`) "+
+            " VALUES ( '"+ myFname + "', '" + myLname +"','" + myAge +"','" + myPassword +"','" + myUname +"')";
+          
+           
+           try{
+               st = conn.createStatement();
+               st.executeQuery(query);
+           }catch(Exception e){
+               
+           }
+            //Alexis       
+        }
+        
         
         
         
