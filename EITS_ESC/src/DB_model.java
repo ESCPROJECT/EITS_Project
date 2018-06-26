@@ -1,6 +1,7 @@
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -22,7 +23,8 @@ public class DB_model {
     /* connection to database:christian
         */
         try{
-         conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/eits_db","root","");
+        // conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/eits_db","root","");
+        conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/elts_db","root","");//just change for Alexis's computer...
          return conn;
         } catch( Exception e) {
           e.printStackTrace();
@@ -130,7 +132,9 @@ public class DB_model {
     }//end of Caseworker method:christian
         
         public static void AddNewCustomer(Customer mycustomer){
-            Statement st;
+           
+             conn = getConnection();
+             Statement st;
             
             int myAge = mycustomer.getMyAge();
             String myUname = mycustomer.getMyUname();
@@ -138,13 +142,23 @@ public class DB_model {
             String myLname = mycustomer.getMyLname();
             String myPassword = mycustomer.getMyPassword();
             
-           String query = "INSERT INTO `customers`(`fname`, `lname`, `age`, `password`, `Uname`) "+
-            " VALUES ( '"+ myFname + "', '" + myLname +"','" + myAge +"','" + myPassword +"','" + myUname +"')";
-          
+           
            
            try{
-               st = conn.createStatement();
-               st.executeQuery(query);
+              String query = "INSERT INTO `customers` ( `fname`, `lname`, `age`, `password`, `Uname`,`type` )  "+
+            " VALUES ( ? , ? , ? , ? , ? , ? )";
+           // create the mysql insert preparedstatement
+            PreparedStatement preparedStmt = conn.prepareStatement(query);
+            preparedStmt.setString(1, myFname);
+            preparedStmt.setString(2, myLname);
+            preparedStmt.setInt(3, myAge);
+            preparedStmt.setString(4, myPassword);
+            preparedStmt.setString(5, myUname);
+            preparedStmt.setString(6, "cu");
+
+             // execute the preparedstatement
+            preparedStmt.execute();
+      
            }catch(Exception e){
                
            }
