@@ -24,11 +24,14 @@ public class administratorScreen extends javax.swing.JFrame {
     public administratorScreen() {
         initComponents();
     }
+    
+    
     public administratorScreen(Customer myAdmin) {
         initComponents();
         myadmin = myAdmin;
-        this.setTitle("welcome "+ myadmin.getMyFname()+ " "+ myadmin.getMyLname());
         
+        this.setTitle("welcome "+ myadmin.getMyFname()+ " "+ myadmin.getMyLname());
+        this.jLabelUname.setText(myadmin.getMyUname());
         
     }
 
@@ -52,7 +55,7 @@ public class administratorScreen extends javax.swing.JFrame {
         editUserButton = new javax.swing.JButton();
         javax.swing.JButton recordClient = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelUname = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
 
         jButton3.setText("Exit");
@@ -110,8 +113,8 @@ public class administratorScreen extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Welcome Administrator");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("[Username]");
+        jLabelUname.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabelUname.setText("[Username]");
 
         jButton2.setText("Logout");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -147,7 +150,7 @@ public class administratorScreen extends javax.swing.JFrame {
                         .addGap(153, 153, 153)
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2)))
+                        .addComponent(jLabelUname)))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -164,7 +167,7 @@ public class administratorScreen extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(jLabelUname))
                 .addGap(51, 51, 51)
                 .addComponent(jButton5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -241,10 +244,10 @@ public class administratorScreen extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelUname;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
