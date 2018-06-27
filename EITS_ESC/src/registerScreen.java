@@ -296,6 +296,7 @@ public class registerScreen extends javax.swing.JFrame {
         newcustomer.setMyPassword(this.textfieldPassword.getText());
         
         DB_model.AddNewCustomer(newcustomer);
+        JOptionPane.showMessageDialog(null, "Thank You For Join EITS!!");
         //Alexis
     }//GEN-LAST:event_ButtonRegisterActionPerformed
 
